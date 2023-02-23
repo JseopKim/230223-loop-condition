@@ -16,9 +16,12 @@
   </ul>
   <script>
     let menu = document.getElementById('menu');
+    console.dir(menu);
+    console.log(menu.children);
+    console.log(menu.children[0]);
 
     for(i = 0; i < menu.children.length; i++) {
-      menu.children[i].style.color = "blue";
+      menu.children[i].style.color = "#f56756";
       menu.children[i].style.fontSize = "50px"
     }
   </script>
