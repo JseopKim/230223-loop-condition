@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <div id="root"></div>
   <script>
-    
+    let fruits = ["고기", "바나나", "나뭇잎"];
+    let animals = ["사자", "원숭이", "기린"];
+
+    let root = document.getElementById("root");
+
+    for (i = 0; i < 3; i++) {
+      root.textContent = animals[i] + "(은/는)" + fruits[i] + "(을/를) 먹는다."
+    }
   </script>
 </body>
+
 </html>
